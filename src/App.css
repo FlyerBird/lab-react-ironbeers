@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 2rem;
+  padding-bottom:2rem;
+}
+
+.allBeers, .randomBeers, .newBeer{
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.allBeers p, .randomBeers p, .newBeer p{
+  padding-left: 1.5rem;
+}
+
+/*******************************************/
+.header{
+  background-color:#3DC4FC;
+  height: 3rem;
+}
+
+.header div{
+  height: 3rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+} 
+
+.imgApiBeers img{
+  width: 2.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.allApiBeers{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.eachApiBeers{
+  display: flex;
+  gap: 4rem;
+  border-bottom: 1px solid gray;
+  margin: 1rem
+}
+
+.textApiBeers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.tagline{
+  color: gray;
 }
