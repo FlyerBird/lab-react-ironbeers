@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import Header from '../components/Header';
+import { Link } from 'react-router-dom'
 
 
 export default function Beers() {
@@ -29,6 +30,7 @@ export default function Beers() {
         {beers && (beers.map(elem => {
             return (
                 <div className='eachApiBeers' key={elem._id} >
+                <Link to={`/beers/${elem._id}`}>
                 <div className='imgApiBeers'>
                     <img src={elem.image_url} alt={elem.name}/>
                 </div>
@@ -37,6 +39,7 @@ export default function Beers() {
                 <p className='tagline'>{elem.tagline}</p>
                 <p> <strong>Created by:</strong> {elem.contributed_by}</p>
                 </div>
+                </Link>
 
                 </div>
             )

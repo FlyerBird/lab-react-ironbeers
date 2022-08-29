@@ -55,13 +55,66 @@
   margin: 1rem
 }
 
+.eachApiBeers a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  gap: 2rem
+
+}
+
 .textApiBeers{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   
 }
 
 .tagline{
   color: gray;
 }
+
+/******************SINGLE BEER DETAIL*************************/
+
+.singleBeer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.singleBeer p{
+  font-weight: 700;
+  text-align: justify;
+}
+
+.singleBeerDiv{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.singleBeer img {
+  width: 5rem;
+}
+
+.attenuation, .brewed {
+  display: flex;
+  justify-content: space-between
+}
+
+.brewed h4, .contributor{
+  color: gray;
+}
+.brewed p{
+  font-weight: bold;
+}
+
+.attenuation  p{
+  color: gray;
+  font-size: 1.5rem;
+}
+
