@@ -44,7 +44,11 @@ export default function Beers() {
                 </div>
             )
         }))}
-        {!beers && <p>Loading...</p>}
+        {!beers && 
+        <div>
+            <p>Loading...</p>
+            <img src='https://img.freepik.com/premium-vector/vector-beer-illustration-bright-yello-background-vintage-style-colorful-mugs_566075-201.jpg?w=2000' alt='' width={150}/> 
+        </div>}
     </div>
   )
 }

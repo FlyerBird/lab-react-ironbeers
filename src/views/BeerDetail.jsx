@@ -26,7 +26,7 @@ export default function BeerDetail() {
         <div className='header'>
             <Header />
         </div>
-
+        {!beer && <p>Loading</p>}
         {beer && (
                 <div className='singleBeer'>
                     <div className='singleBeerDiv'>
