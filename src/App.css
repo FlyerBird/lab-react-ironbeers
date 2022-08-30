@@ -118,3 +118,43 @@
   font-size: 1.5rem;
 }
 
+/******************FORM*************************/
+
+.newBeerForm{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.newBeerForm input {
+  border-radius: 20px;
+  border-color: lightgrey;
+  height: 2rem;
+  padding-inline-start: 2rem;
+  
+}
+
+.newBeerForm .descriptionInput {
+  height: 10rem;
+}
+
+.formSections{
+  display: flex;
+  flex-direction: column;
+}
+
+.formSections label{
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.addNewButton{
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border-radius: 25px;
+  background-color: #3DC4FC;
+  border: none;
+  color: azure;
+  font-weight: 700;
+}
